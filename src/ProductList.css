@@ -1,0 +1,85 @@
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    max-width: 1000px; 
+    margin: 0 auto;
+  }
+  
+  .product-list-heading {
+    text-align: center;
+    margin-bottom: 20px; 
+    font-family: 'Gil Sans', 'Gill Sans MT', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  .product-item {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd; 
+    padding: 20px; 
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+
+  .product-image-container {
+    flex-shrink: 0;
+    margin-right: 20px;
+  }
+  
+  .product-image {
+    width: 150px;
+    height: 150px;
+    border: 4px solid #1ac8f4;
+    object-fit: cover; 
+    margin-right: 10px;
+  }
+  
+  .product-details {
+    flex-grow: 1;
+  }
+  
+  .quantity-controls {
+    display: flex;
+    align-items: center;
+  }
+  
+  .quantity-button {
+   border: none;
+    border-radius: 5px;
+    padding: 6px 12px; 
+    font-size: 12px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .quantity {
+    margin: 0 8px;
+  }
+  
+  .product-button {
+    margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 0px;
+  font-size: medium;
+  font-weight: 200;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  } 
+
+  .product-button:hover{
+    background-color: #36d959;
+    color: #fff;
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .quantity-button:hover {
+    background-color: #d8dadb;
+    color: #fff;
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+ 
