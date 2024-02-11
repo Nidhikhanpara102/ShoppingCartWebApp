@@ -1,38 +1,45 @@
-.product-container {
+ /* ProductList.css */
+ .product-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
     gap: 20px; 
     max-width: 1000px; 
     margin: 0 auto;
+    margin-bottom: 100px;
+    
   }
   
   .product-list-heading {
     text-align: center;
     margin-bottom: 20px; 
     font-family: 'Gil Sans', 'Gill Sans MT', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: bold;
   }
   
   .product-item {
     display: flex;
-    align-items: center;
     border: 1px solid #ddd; 
+    border-radius: 20px;
     padding: 20px; 
-    box-sizing: border-box;
-    text-align: center;
+    /* For giving shadow to the container */
+    box-shadow: 0 4px 8px rgba(17, 17, 17, 0.2);
+    /* For the transition animation pf the items */
+    transition: transform 0.3s ease;
   }
   
-
   .product-image-container {
     flex-shrink: 0;
     margin-right: 20px;
   }
   
   .product-image {
-    width: 150px;
-    height: 150px;
-    border: 4px solid #1ac8f4;
+    width: 180px;
+    height: 180px;
+    border: 1px solid #57575708;
+    border-radius: 5px;
     object-fit: cover; 
     margin-right: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   }
   
   .product-details {
@@ -45,20 +52,20 @@
   }
   
   .quantity-button {
-   border: none;
-    border-radius: 5px;
-    padding: 6px 12px; 
-    font-size: 12px; 
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
+    border: none;
+     border-radius: 5px;
+     padding: 6px 12px; 
+     font-size: 12px; 
+     cursor: pointer;
+     transition: background-color 0.3s ease, color 0.3s ease;
+   }
   
   .quantity {
     margin: 0 8px;
   }
   
   .product-button {
-    margin-top: 20px;
+  margin-top: 20px;
   padding: 10px 20px;
   border: none;
   border-radius: 10px;
@@ -68,7 +75,7 @@
   font-weight: 200;
   transition: background-color 0.3s ease, color 0.3s ease;
   } 
-
+ 
   .product-button:hover{
     background-color: #36d959;
     color: #fff;
@@ -83,3 +90,21 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
  
+  .banner-image {
+    width: 100%; 
+    height: 300px; 
+  }
+
+  .footer {
+    margin-top: auto;
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .product-item:hover {
+    transform: scale(1.05); /* Scale up when hovered */
+}

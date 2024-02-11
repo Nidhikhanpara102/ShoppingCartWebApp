@@ -1,0 +1,78 @@
+/* AccountPage.css */
+
+.account-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .tab-container {
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 10px
+  }
+  
+   /* tab container button and by default color */
+  .tab-container button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #bfdeff83;
+    cursor: pointer;
+  }
+  
+  /* For the tab container active state */
+  .tab-container button.active {
+    background-color: #ffb702e2;
+    color: #fff;
+  }
+  
+  .content-container {
+    width: 400px;
+  }
+  
+  .form-container {
+    padding: 20px;
+    background-color: #bfdeff83;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .form-container label {
+    font-family: 'Gil Sans', 'Gill Sans MT', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .form-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .form-container button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .form-container button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Display data to a container after creating account or updating address. */
+  .display-container {
+    padding: 20px;
+    background-color: #bfdeff83;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    color: #0056b3;
+  }
+  
